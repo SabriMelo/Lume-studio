@@ -1,16 +1,23 @@
-# React + Vite
+# Lume Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional do **Lume Studio**, estúdio de visualização 3D arquitetônica em Recife, PE. Apresenta o portfólio de renders de interiores, fachadas e empreendimentos, com galeria de projetos filtrável, páginas de detalhe e formulário de contato.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite** (build e dev server)
+- **React Router DOM** (navegação SPA)
+- **Tailwind CSS v4** (estilização)
+- **GSAP** + ScrollTrigger (animações e carrossel)
+- **EmailJS** (envio do formulário de contato sem backend)
 
-## React Compiler
+## Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run dev      # ambiente de desenvolvimento
+npm run build    # build de produção (saída em dist/)
+npm run preview  # preview do build de produção
+```
 
-## Expanding the ESLint configuration
+## Deploy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O conteúdo de `dist/` é hospedado na Hostinger (Apache), com `.htaccess` cuidando do roteamento SPA, compressão Gzip e cache de assets.
