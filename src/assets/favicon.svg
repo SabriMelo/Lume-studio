@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fundo bege da marca -->
+  <rect width="100" height="100" fill="#f0ede6"/>
+  <!-- Logo "L" centralizada, escalada para caber no quadrado -->
+  <g transform="translate(50,50) scale(0.36) translate(-120,-101)">
+    <path fill="#1c1917" d="M0,203.59c5.99-9.93,10.6-21.46,17.99-30.41,19.78-23.94,50.29-32.67,80.26-35.51l142.26.05-26.94,65.86h-97.8l24.44-60.89c-10.86,1.29-20.88,4.1-30.34,9.58-19.78,11.44-28.84,32.68-40.5,51.32H0Z"/>
+    <polygon fill="#1c1917" points="198.6 0 144.21 127.74 71.86 127.74 125.25 0 198.6 0"/>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+
+  img, video {
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+/* Nav hover line */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1c1917;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Header */
+
+.header {
+    background-color: rgb(227, 217, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.logo a img{
+    height: 90px;
+    width: auto;
+}
+
+.nav-header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-header a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(174, 157, 137);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-footer ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+}

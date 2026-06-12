@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#f0ede6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+
+    <!-- SEO básico -->
+    <title>Lume Studio | Visualização 3D Arquitetônica — Recife, PE</title>
+    <meta name="description" content="Estúdio especializado em visualização 3D arquitetônica. Renders fotorrealistas de interiores, fachadas e empreendimentos. Atendimento em todo o Brasil." />
+    <meta name="keywords" content="visualização 3D, render arquitetônico, perspectiva 3D, render de interiores, render externo, modelagem 3D, Recife, Pernambuco, arquitetura" />
+    <meta name="author" content="Sabrina Bernardo — Lume Studio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lumestudio3d.com.br/" />
+
+    <!-- Open Graph (compartilhamento no WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lumestudio3d.com.br/" />
+    <meta property="og:title" content="Lume Studio | Visualização 3D Arquitetônica" />
+    <meta property="og:description" content="Renders fotorrealistas de interiores, fachadas e empreendimentos. Transformamos projetos arquitetônicos em imagens impactantes." />
+    <meta property="og:image" content="https://lumestudio3d.com.br/og-image.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Lume Studio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lume Studio | Visualização 3D Arquitetônica" />
+    <meta name="twitter:description" content="Renders fotorrealistas de interiores, fachadas e empreendimentos." />
+    <meta name="twitter:image" content="https://lumestudio3d.com.br/og-image.jpg" />
+
+    <!-- Dados estruturados (Google entende o negócio) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Lume Studio",
+      "description": "Estúdio de visualização 3D arquitetônica especializado em renders fotorrealistas de interiores, fachadas residenciais, comerciais e empreendimentos.",
+      "url": "https://lumestudio3d.com.br",
+      "logo": "https://lumestudio3d.com.br/favicon.svg",
+      "image": "https://lumestudio3d.com.br/og-image.jpg",
+      "email": "sabrinabernardo002@gmail.com",
+      "telephone": "+5581992809343",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Recife",
+        "addressRegion": "PE",
+        "addressCountry": "BR"
+      },
+      "areaServed": "Brasil",
+      "serviceType": ["Visualização 3D", "Render arquitetônico", "Modelagem 3D", "Render de interiores"],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://wa.me/5581992809343"
+      ]
+    }
+    </script>
+
+    <!-- Preload das primeiras imagens do hero (fetchpriority=high → browser prioriza no LCP) -->
+    <link rel="preload" as="image" href="/hero/01.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero/HALL3.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/hero/HALL_casaorange.webp" />
+    <link rel="preload" as="image" href="/hero/casa-fr-1.webp" />
+
+    <!-- Fonts: preconnect + carregamento assíncrono (não bloqueia renderização) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </noscript>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

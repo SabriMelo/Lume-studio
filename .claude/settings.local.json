@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls public/hero/)",
+      "Bash(du -sh public/hero/*.webp)",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__read_page",
+      "Bash(powershell -Command \"Test-NetConnection -ComputerName 195.35.41.185 -Port 21 -WarningAction SilentlyContinue | Select-Object ComputerName, RemotePort, TcpTestSucceeded, PingSucceeded\")",
+      "PowerShell($r443 = Test-NetConnection -ComputerName 195.35.41.185 -Port 443 -WarningAction SilentlyContinue; $r80 = Test-NetConnection -ComputerName 195.35.41.185 -Port 80 -WarningAction SilentlyContinue; \"Porta 443 \\(HTTPS\\): $\\($r443.TcpTestSucceeded\\)\"; \"Porta 80  \\(HTTP\\):  $\\($r80.TcpTestSucceeded\\)\")"
+    ]
+  }
+}
